@@ -19,11 +19,13 @@ sap.ui.define([
             return oFragment
         },
         createData: function(oModel, oPayload, sPath){
+            debugger
             return new Promise((resolve, reject) => {
                 oModel.create(sPath, oPayload, {
                     refreshAfterChange: true,
                     success: function(oSuccessData){
                         resolve(oSuccessData);
+                        debugger
                     },
                     error: function(oErrorData){
                         reject(oErrorData)

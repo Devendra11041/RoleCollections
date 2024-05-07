@@ -13,10 +13,10 @@
         id="idEmployeeDetailsObjectPage"
         beforeNavigate="onBeforeNavigate"
         enableLazyLoading="true"
-		useIconTabBar="true"
-		showTitleInHeaderContent="true"
-		upperCaseAnchorBar="false"
-		sectionChange="onSectionChange"
+        useIconTabBar="false"
+        showTitleInHeaderContent="true"
+        upperCaseAnchorBar="false"
+        sectionChange="onSectionChange"
     >
         <u:headerTitle>
             <u:ObjectPageDynamicHeaderTitle
@@ -30,11 +30,9 @@
                     />
                 </u:expandedHeading>
 
-
-
                 <u:expandedContent>
-                    <Text id="_IDGenTitle2"
-                    
+                    <Text
+                        id="_IDGenTitle2"
                         text="{email}"
                         wrapping="true"
                     />
@@ -63,7 +61,7 @@
                         text="Share"
                         tooltip="action"
                     />
-                <!-- </u:actions>
+                    <!-- </u:actions>
 
                   <u:actions> -->
                     <Button
@@ -93,7 +91,6 @@
                                 columnsM="2"
                                 columnsL="3"
                                 columnsXL="4"
-
                             >
                                 <Label
                                     id="idNameLabel"
@@ -124,7 +121,7 @@
                     </u:ObjectPageSubSection>
                 </u:subSections>
             </u:ObjectPageSection>
- 
+
             <u:ObjectPageSection
                 id="idAddressSection"
                 title="Address Details"
@@ -133,7 +130,7 @@
                 <u:subSections>
                     <u:ObjectPageSubSection id="_IDGenObjectPageSubSection2">
                         <u:blocks>
-                             <core:Fragment
+                            <core:Fragment
                                 type="XML"
                                 fragmentName="com.app.employeedetails.fragments.Address"
                             />
@@ -142,54 +139,51 @@
                 </u:subSections>
             </u:ObjectPageSection>
 
-			<u:ObjectPageSection
+            <u:ObjectPageSection
                 titleUppercase="true"
                 id="SalaryInfo"
                 title="Salary Information"
             >
                 <u:subSections>
-                    <u:ObjectPageSubSection id="_IDGenObjectPageSubSection3" >
+                    <u:ObjectPageSubSection id="_IDGenObjectPageSubSection3">
                         <u:blocks>
-                         <core:Fragment
+                            <core:Fragment
                                 type="XML"
                                 fragmentName="com.app.employeedetails.fragments.Salary"
                             />
-                             
                         </u:blocks>
                     </u:ObjectPageSubSection>
                 </u:subSections>
             </u:ObjectPageSection>
 
-            <u:ObjectPageSection id="_IDGenObjectPageSection1"
+            <u:ObjectPageSection
+                id="_IDGenObjectPageSection1"
                 titleUppercase="true"
-                
                 title="Department Information"
             >
                 <u:subSections>
-                    <u:ObjectPageSubSection id="_IDGenObjectPageSubSection4"  >
+                    <u:ObjectPageSubSection id="_IDGenObjectPageSubSection4">
                         <u:blocks>
-                        <core:Fragment
+                            <core:Fragment
                                 type="XML"
                                 fragmentName="com.app.employeedetails.fragments.Department"
                             />
-                         
-                            
                         </u:blocks>
                     </u:ObjectPageSubSection>
                 </u:subSections>
             </u:ObjectPageSection>
-<u:ObjectPageSection id="_IDGenObjectPageSection2"
+            <u:ObjectPageSection
+                id="_IDGenObjectPageSection2"
                 titleUppercase="true"
-                
                 title="Designation Information"
             >
                 <u:subSections>
-                    <u:ObjectPageSubSection id="_IDGenObjectPageSubSection5"  >
+                    <u:ObjectPageSubSection id="_IDGenObjectPageSubSection5">
                         <u:blocks>
-                        <core:Fragment
-type="XML"
-fragmentName="com.app.employeedetails.fragments.Designation"/>
-                            
+                            <core:Fragment
+                                type="XML"
+                                fragmentName="com.app.employeedetails.fragments.Designation"
+                            />
                         </u:blocks>
                     </u:ObjectPageSubSection>
                 </u:subSections>

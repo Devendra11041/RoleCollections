@@ -32,7 +32,10 @@
     {
       "name": "RCEmployeeCAPAdmin",
       "description": "Admin Can Create, Update, Delete The Data",
-      "role-template-references": ["$XSAPPNAME.Admin"]
+      "role-template-references": [
+        "$XSAPPNAME.Admin"
+      ]
     }
-  ]  
+  ],
+  "attributes": []
 }
