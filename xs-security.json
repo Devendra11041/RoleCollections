@@ -30,12 +30,11 @@
   ],
   "role-collections": [
     {
-      "name": "RCEmployeeCAPAdmin",
+      "name": "RCEmployeeCAPAdmins",
       "description": "Admin Can Create, Update, Delete The Data",
       "role-template-references": [
         "$XSAPPNAME.Admin"
       ]
     }
-  ],
-  "attributes": []
+  ]
 }
