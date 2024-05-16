@@ -1,4 +1,4 @@
 
 using from './employeedetails/annotations';
 
-using from './employeefiorielement/annotations';
+using from './fiorielements/annotations';
