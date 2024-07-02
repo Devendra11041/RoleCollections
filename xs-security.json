@@ -10,6 +10,10 @@
     {
       "name": "$XSAPPNAME.Admin",
       "description": "Admin Scope"
+    },
+    {
+      "name": "$XSAPPNAME.User",
+      "description": "User Scope"
     }
   ],
   "role-templates": [
@@ -26,14 +30,28 @@
       "scope-references": [
         "$XSAPPNAME.Admin"
       ]
+    },
+    {
+      "name": "User",
+      "description": "User Role Template",
+      "scope-references": [
+        "$XSAPPNAME.User"
+      ]
     }
   ],
   "role-collections": [
     {
-      "name": "RCEmployeeCAPAdmins",
+      "name": "RCEmployeeCAPAdminsde",
       "description": "Admin Can Create, Update, Delete The Data",
       "role-template-references": [
         "$XSAPPNAME.Admin"
+      ]
+    },
+    {
+      "name": "RCEmployeeCAPUser",
+      "description": "User Can READ",
+      "role-template-references": [
+        "$XSAPPNAME.User"
       ]
     }
   ],
